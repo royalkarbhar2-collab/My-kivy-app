@@ -100,9 +100,8 @@ fullscreen = 0
 #icon.adaptive_foreground.filename = %(source.dir)s/data/icon_fg.png
 #icon.adaptive_background.filename = %(source.dir)s/data/icon_bg.png
 
-# (list) Permissions
-# (See https://python-for-android.readthedocs.io/en/latest/buildoptions.html for all the supported syntaxes and properties)
-#android.permissions = android.permission.INTERNET, (name=android.permission.WRITE_EXTERNAL_STORAGE;maxSdkVersion=18)
+# # (list) Permissions
+android.permissions = INTERNET, WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE
 
 # (list) features (adds uses-feature -tags to manifest)
 #android.features = android.hardware.usb.host
@@ -110,17 +109,11 @@ fullscreen = 0
 # (int) Target Android API, should be as high as possible.
 android.api = 33
 
+android.ndk = 25b
+
 # (int) Minimum API your APK / AAB will support.
 android.minapi = 21
 
-# (int) Android SDK version to use
-#android.sdk = 20
-
-# (str) Android NDK version to use
-#android.ndk = 23b
-
-# (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
-android.ndk_api = 21
 
 # (str) Android NDK directory (if empty, it will be automatically downloaded.)
 #android.ndk_path =
